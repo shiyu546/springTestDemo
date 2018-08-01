@@ -12,7 +12,9 @@ public class App {
     public static void main( String[] args ) {
         ApplicationContext context=new ClassPathXmlApplicationContext("spring/application-context.xml");
 
-        MyBean myBean= (MyBean) context.getBean("mybean");
+        //MyBean myBean= (MyBean) context.getBean("MyBean");
+
+        MyBean myBean=context.getBean(MyBean.class);
 
         myBean.setName("shiyu");
 
