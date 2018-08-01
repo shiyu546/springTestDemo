@@ -1,0 +1,6 @@
+#过滤掉idea的配置文件
+*.iml
+
+#过滤掉target文件
+
+/target/
